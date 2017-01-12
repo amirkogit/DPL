@@ -1,1 +1,5 @@
-Repository for learning Design Patterns Library in C++.
+#DPL (Design Pattern Library)
+Repository for learning various Design Patterns and implement them in C++.
+
+##Reference:
+* Pluralsight course
