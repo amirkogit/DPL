@@ -15,13 +15,16 @@ namespace DPL {
       {
       }
 
-      // this is a bad way of doing things. Journal class should not be
+      // this is a bad way of doing things. Journal class should not be concerned with
+      // persistence
       void add(const std::string& entry)
       {
         entries.push_back(entry);
       }
     };
 
+    // Better way: Single Responsibility Principle
+    // PersistenceManager class segregates the logic for saving of Journal objects from the Journal class
     struct PersistenceManager
     {
       static void save(const Journal& j, const std::string& filename)
