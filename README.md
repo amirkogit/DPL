@@ -10,11 +10,11 @@ Demonstrates basic SOLID principle.
 
 SOLID stands for:
 
-	* S - Separation of Concern
-	* O - Open Close Principle
-	* L - Liskov Subsitution Principle
-	* I - Inversion of Control
-	* D - Dependency Injection
+	* S - Single Responsibility Principle (SRP)
+	* O - Open-Closed Principle (OCP)
+	* L - Liskov Subsitution Principle (LSP)
+	* I - Interface Segregation Principle (ISP)
+	* D - Dependency Inversion Principle (DIP)
 
 ##References:
 * GOF - Design pattern book
