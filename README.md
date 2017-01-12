@@ -5,7 +5,7 @@ The DesignPatternLibrary folder (under Source folder) contains the following:
 * DesignPatternLibrary.pro: project file which is a Qt based project file.
 * main.cpp : main program entry point
 
-1. Preliminaries:
+####1. Preliminaries:
 Demonstrates basic SOLID principle.
 SOLID stands for:
 	* S - Separation of Concern
