@@ -7,7 +7,9 @@ The DesignPatternLibrary folder (under Source folder) contains the following:
 
 ####1. Preliminaries:
 Demonstrates basic SOLID principle.
+
 SOLID stands for:
+
 	* S - Separation of Concern
 	* O - Open Close Principle
 	* L - Liskov Subsitution Principle
