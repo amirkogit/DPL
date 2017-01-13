@@ -5,6 +5,8 @@ namespace DPL {
 class PreliminariesDemo {
 public:
     static void RunSingleResponsibilityPrincipleDemo();
+
+    static void RunOpenClosedPrincipleDemo();
 };
 } // end of namespace DPL
 

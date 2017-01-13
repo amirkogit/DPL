@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     qDebug() << "Running DPL demos...\n";
 
     DPL::PreliminariesDemo::RunSingleResponsibilityPrincipleDemo();
+    DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo();
 
     return a.exec();
 }
