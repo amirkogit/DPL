@@ -55,7 +55,7 @@ struct ProductFilter
     }
 
     // now if we need to filter by size, we pretty much repeat the same code as
-    static Items ItemsNySize(Items items, Size size)
+    static Items ItemsBySize(Items items, Size size)
     {
         Items result;
         for(auto &item : items) {
@@ -67,7 +67,7 @@ struct ProductFilter
     }
 
     // also, if we need to do filter by both color and size, we end up as follows
-    static Items ItemNySizeAndColor(Items items, Color color, Size size)
+    static Items ItemBySizeAndColor(Items items, Color color, Size size)
     {
         Items result;
         for(auto &item : items) {
