@@ -32,6 +32,8 @@ int main(int argc, char *argv[])
 
     DPL::PreliminariesDemo::RunSingleResponsibilityPrincipleDemo();
     DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo();
+    DPL::PreliminariesDemo::RunLiskovSubstitutionPrincipleDemo();
+    DPL::PreliminariesDemo::RunInterfaceSegregationPrincipleDemo();
 
     return a.exec();
 }

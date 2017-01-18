@@ -29,6 +29,10 @@ public:
     static void RunSingleResponsibilityPrincipleDemo();
 
     static void RunOpenClosedPrincipleDemo();
+
+    static void RunLiskovSubstitutionPrincipleDemo();
+
+    static void RunInterfaceSegregationPrincipleDemo();
 };
 } // end of namespace DPL
 
