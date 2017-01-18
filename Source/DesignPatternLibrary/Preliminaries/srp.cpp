@@ -34,7 +34,7 @@ namespace DPL {
       std::vector<std::string> entries;
 
       explicit Journal(const std::string& title)
-        : title{title}
+        : title(title)
       {
       }
 
