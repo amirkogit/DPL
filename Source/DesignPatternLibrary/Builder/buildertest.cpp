@@ -7,6 +7,7 @@
 
 #include "Builder/HTML/htmlelement.h"
 #include "Builder/HTML/htmlbuilder.h"
+#include "Builder/Groovy/groovystyle.h"
 
 #include <iostream>
 
@@ -34,4 +35,16 @@ void BuilderTest::RunHTMLBuilderTest()
     auto builder2 = HtmlElement::Build("ul");
     builder2->AddChild2("li", "hello")->AddChild2("li","world");
     std::cout << builder2->ToString() << std::endl;
+}
+
+void BuilderTest::RunGroovyStyleTest()
+{
+    std::cout << ">> Running Builder demo (Groovy style builder)\n";
+    std::cout << "-------------------------------------------------\n";
+
+    std::cout <<
+        P {
+            Img {"http://google.com"}
+        }
+    << std::endl;
 }

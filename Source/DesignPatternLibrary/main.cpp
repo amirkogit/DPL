@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
     PreliminariesTest::RunPreliminariesTest();
     BuilderTest::RunPersonBuilderTest();
     BuilderTest::RunHTMLBuilderTest();
+    BuilderTest::RunGroovyStyleTest();
 
     return a.exec();
 }

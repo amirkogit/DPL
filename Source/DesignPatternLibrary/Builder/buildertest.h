@@ -7,6 +7,8 @@ public:
     static void RunPersonBuilderTest();
 
     static void RunHTMLBuilderTest();
+
+    static void RunGroovyStyleTest();
 };
 
 #endif // BUILDERTEST_H

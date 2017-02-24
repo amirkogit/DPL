@@ -40,4 +40,5 @@ HEADERS += \
     Builder/buildertest.h \
     Preliminaries/preliminariestest.h \
     Builder/HTML/htmlbuilder.h \
-    Builder/HTML/htmlelement.h
+    Builder/HTML/htmlelement.h \
+    Builder/Groovy/groovystyle.h
