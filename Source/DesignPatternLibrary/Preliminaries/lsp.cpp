@@ -24,7 +24,7 @@
 // Demonstrates classic Rectangle and Square problem
 
 #include <iostream>
-#include "preliminariesdemo.h"
+#include "preliminariestest.h"
 
 class Rectangle
 {
@@ -89,7 +89,7 @@ void Process(Rectangle& rect)
               << " Actual area = " << rect.Area() << std::endl;
 }
 
-void DPL::PreliminariesDemo::RunLiskovSubstitutionPrincipleDemo()
+void PreliminariesTest::RunLiskovSubstitutionPrincipleDemo()
 {
     Rectangle rect {5,5};
     Process(rect);

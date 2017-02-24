@@ -20,47 +20,26 @@
 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+// QT includes
 #include <QCoreApplication>
 #include <QDebug>
 
+// standard includes
 #include <iostream>
 
-#include "Preliminaries/preliminariesdemo.h"
-
-#include "Builder/person.h"
-#include "Builder/personbuilder.h"
-#include "Builder/personaddressbuilder.h"
-#include "Builder/personjobbuilder.h"
-
-void RunPreliminariesDemo()
-{
-    DPL::PreliminariesDemo::RunSingleResponsibilityPrincipleDemo();
-    DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo();
-    DPL::PreliminariesDemo::RunLiskovSubstitutionPrincipleDemo();
-    DPL::PreliminariesDemo::RunInterfaceSegregationPrincipleDemo();
-}
-
-void RunPersonBuilderDemo()
-{
-    std::cout << ">> Running Builder demo\n";
-    std::cout << "-----------------------\n";
-
-    Person p = Person::Create()
-            .Lives().At("2445 Alameda").WithPostCode("94501").In("CA")
-            .Works().At("Apple").AsA("Engineer").Earning(50000);
-
-    std::cout << p << std::endl;
-}
+// project includes
+#include "Preliminaries/preliminariestest.h"
+#include "Builder/buildertest.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    std::cout << "Running DPL demos...\n";
+
+    std::cout << ">> Running DPL demos...\n";
     std::cout << "-----------------------\n";
 
-    //RunPreliminariesDemo();
-
-    RunPersonBuilderDemo();
+    PreliminariesTest::RunPreliminariesTest();
+    BuilderTest::RunPersonBuilderTest();
 
     return a.exec();
 }

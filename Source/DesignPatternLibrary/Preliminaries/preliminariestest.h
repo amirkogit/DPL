@@ -23,8 +23,7 @@
 #ifndef PRELININARIESDEMO_H
 #define PRELININARIESDEMO_H
 
-namespace DPL {
-class PreliminariesDemo {
+class PreliminariesTest {
 public:
     static void RunSingleResponsibilityPrincipleDemo();
 
@@ -33,7 +32,8 @@ public:
     static void RunLiskovSubstitutionPrincipleDemo();
 
     static void RunInterfaceSegregationPrincipleDemo();
+
+    static void RunPreliminariesTest();
 };
-} // end of namespace DPL
 
 #endif // PRELININARIESDEMO_H

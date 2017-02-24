@@ -20,6 +20,18 @@
 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-# include "preliminariesdemo.h"
+# include "preliminariestest.h"
+#include <iostream>
 
-// placeholder file for proper linkage of static functions defined in the header file
+void PreliminariesTest::RunPreliminariesTest()
+{
+    std::cout << ">> Running Preliminaries demo\n";
+    std::cout << "------------------------------\n";
+
+    PreliminariesTest::RunSingleResponsibilityPrincipleDemo();
+    PreliminariesTest::RunOpenClosedPrincipleDemo();
+    PreliminariesTest::RunLiskovSubstitutionPrincipleDemo();
+    PreliminariesTest::RunInterfaceSegregationPrincipleDemo();
+
+    std::cout << std::endl;
+}

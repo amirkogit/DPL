@@ -20,13 +20,11 @@
 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include "preliminariesdemo.h"
+#include "preliminariestest.h"
 
 #include <string>
 #include <vector>
 #include <iostream>
-
-namespace DPL {
 
 enum class Color { Red, Green, Blue };
 enum class Size { Small, Medium, Large };
@@ -172,7 +170,7 @@ template <typename T> struct AndSpecification : ISpecification<T>
 //---------------------------------------------------------
 
 // main method to test this demo
-void DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo()
+void PreliminariesTest::RunOpenClosedPrincipleDemo()
 {
     // sample test data
     Product apple { "Apple", Color::Green, Size::Small };
@@ -202,4 +200,3 @@ void DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo()
     }
 }
 
-} // end of namespace DPL

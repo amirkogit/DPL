@@ -22,7 +22,7 @@
 */
 
 #include <vector>
-#include "preliminariesdemo.h"
+#include "preliminariestest.h"
 
 // suppose we have a class named Document
 class Document
@@ -90,7 +90,7 @@ class MultiPeripheralMachine2 : public IPrinter, IScanner
     void Scan(DocumentList docs) override {}
 };
 
-void DPL::PreliminariesDemo::RunInterfaceSegregationPrincipleDemo()
+void PreliminariesTest::RunInterfaceSegregationPrincipleDemo()
 {
     MultiPeripheralMachine machine;
 

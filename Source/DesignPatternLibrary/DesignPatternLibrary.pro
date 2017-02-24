@@ -12,11 +12,12 @@ TEMPLATE = app
 SOURCES += main.cpp \
     Preliminaries/srp.cpp \
     Preliminaries/ocp.cpp \
-    Preliminaries/preliminariesdemo.cpp \
     Preliminaries/isp.cpp \
     Preliminaries/lsp.cpp \
     Builder/person.cpp \
-    Builder/personbuilder.cpp
+    Builder/personbuilder.cpp \
+    Builder/buildertest.cpp \
+    Preliminaries/preliminariestest.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -30,8 +31,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 HEADERS += \
-    Preliminaries/preliminariesdemo.h \
     Builder/person.h \
     Builder/personbuilder.h \
     Builder/personaddressbuilder.h \
-    Builder/personjobbuilder.h
+    Builder/personjobbuilder.h \
+    Builder/buildertest.h \
+    Preliminaries/preliminariestest.h
