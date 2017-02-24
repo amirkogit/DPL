@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 
     PreliminariesTest::RunPreliminariesTest();
     BuilderTest::RunPersonBuilderTest();
+    BuilderTest::RunHTMLBuilderTest();
 
     return a.exec();
 }

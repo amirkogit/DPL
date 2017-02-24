@@ -17,7 +17,9 @@ SOURCES += main.cpp \
     Builder/person.cpp \
     Builder/personbuilder.cpp \
     Builder/buildertest.cpp \
-    Preliminaries/preliminariestest.cpp
+    Preliminaries/preliminariestest.cpp \
+    Builder/HTML/htmlbuilder.cpp \
+    Builder/HTML/htmlelement.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -36,4 +38,6 @@ HEADERS += \
     Builder/personaddressbuilder.h \
     Builder/personjobbuilder.h \
     Builder/buildertest.h \
-    Preliminaries/preliminariestest.h
+    Preliminaries/preliminariestest.h \
+    Builder/HTML/htmlbuilder.h \
+    Builder/HTML/htmlelement.h
