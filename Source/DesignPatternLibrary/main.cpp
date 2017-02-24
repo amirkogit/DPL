@@ -23,17 +23,44 @@
 #include <QCoreApplication>
 #include <QDebug>
 
+#include <iostream>
+
 #include "Preliminaries/preliminariesdemo.h"
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
-    qDebug() << "Running DPL demos...\n";
+#include "Builder/person.h"
+#include "Builder/personbuilder.h"
+#include "Builder/personaddressbuilder.h"
+#include "Builder/personjobbuilder.h"
 
+void RunPreliminariesDemo()
+{
     DPL::PreliminariesDemo::RunSingleResponsibilityPrincipleDemo();
     DPL::PreliminariesDemo::RunOpenClosedPrincipleDemo();
     DPL::PreliminariesDemo::RunLiskovSubstitutionPrincipleDemo();
     DPL::PreliminariesDemo::RunInterfaceSegregationPrincipleDemo();
+}
+
+void RunPersonBuilderDemo()
+{
+    std::cout << ">> Running Builder demo\n";
+    std::cout << "-----------------------\n";
+
+    Person p = Person::Create()
+            .Lives().At("2445 Alameda").WithPostCode("94501").In("CA")
+            .Works().At("Apple").AsA("Engineer").Earning(50000);
+
+    std::cout << p << std::endl;
+}
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+    std::cout << "Running DPL demos...\n";
+    std::cout << "-----------------------\n";
+
+    //RunPreliminariesDemo();
+
+    RunPersonBuilderDemo();
 
     return a.exec();
 }
