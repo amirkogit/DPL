@@ -1,11 +1,11 @@
-#DPL (Design Patterns Library)
+# DPL (Design Patterns Library)
 Repository for learning various Design Patterns and implement them in C++.
 
 The DesignPatternLibrary folder (under Source folder) contains the following:
 * DesignPatternLibrary.pro: project file which is a Qt based project file.
 * main.cpp : main program entry point
 
-####1. Preliminaries:
+#### 1. Preliminaries:
 Demonstrates basic SOLID principle.
 
 SOLID stands for:
@@ -16,6 +16,6 @@ SOLID stands for:
 	* I - Interface Segregation Principle (ISP)
 	* D - Dependency Inversion Principle (DIP)
 
-##References:
+## References:
 * GOF - Design pattern book
 * Pluralsight course
